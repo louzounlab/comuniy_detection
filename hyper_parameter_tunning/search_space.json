@@ -1,0 +1,12 @@
+
+{
+    "input_vec":{"_type":"choice","_value":[["DEG", "CENTRALITY", "BFS"], ["DEG"]]},
+    "batch_size":{"_type":"choice","_value":[4, 16, 32]},
+    "optimizer":{"_type":"choice","_value":["ADAM", "SGD"]},
+    "learning_rate":{"_type":"uniform","_value":[1e-4, 1e-2]},
+    "dropout":{"_type":"uniform","_value":[0, 0.5]},
+    "regularization":{"_type":"uniform","_value":[0, 1]},
+    "epochs":{"_type":"choice","_value":[25, 50, 100]},
+    "layers_config":{"_type":"choice","_value":[[100, 50], [50, 25], [50, 50] ,[50, 50, 50], [50, 25, 25]]}
+}
+
